@@ -1,0 +1,543 @@
+# TYPE openstack_cinder_agent_state counter
+openstack_cinder_agent_state{adminState="enabled",disabledReason="",hostname="vcs-node0@ssd_1e6217f13e334725917619aacef04827",service="cinder-volume",uuid="6c90245f-bf44-c1b0-5fec-4eeabfb05609",zone="nova"} 1
+openstack_cinder_agent_state{adminState="enabled",disabledReason="reconfigure_cinder",hostname="vcs-node0",service="cinder-scheduler",uuid="53f3bba1-802b-6cab-e626-d08d19c0e944",zone="nova"} 1
+openstack_cinder_agent_state{adminState="enabled",disabledReason="reconfigure_cinder",hostname="vcs-node0@hdd_47bda354e41d47aea7c8fe21cfeb2239",service="cinder-volume",uuid="40be70ca-cc5c-e7d1-7f9c-1d5f8f8d0589",zone="nova"} 1
+openstack_cinder_agent_state{adminState="enabled",disabledReason="reconfigure_cinder",hostname="vcs-node0@ssd_6751e140bd0640b4983e0851eba5243c",service="cinder-volume",uuid="082c4f7a-9730-3bf5-3ba2-23c4583185bd",zone="nova"} 1
+# HELP openstack_cinder_limits_volume_max_gb limits_volume_max_gb
+# TYPE openstack_cinder_limits_volume_max_gb gauge
+openstack_cinder_limits_volume_max_gb{tenant="admin",tenant_id="8665562a290e4da89f7612396a1ad580"} -1
+openstack_cinder_limits_volume_max_gb{tenant="service",tenant_id="ccdf55a5a11d4535a11e08aa222af66a"} -1
+# HELP openstack_cinder_limits_volume_used_gb limits_volume_used_gb
+# TYPE openstack_cinder_limits_volume_used_gb gauge
+openstack_cinder_limits_volume_used_gb{tenant="admin",tenant_id="8665562a290e4da89f7612396a1ad580"} 7831
+openstack_cinder_limits_volume_used_gb{tenant="service",tenant_id="ccdf55a5a11d4535a11e08aa222af66a"} 0
+# HELP openstack_cinder_pool_capacity_free_gb pool_capacity_free_gb
+# TYPE openstack_cinder_pool_capacity_free_gb gauge
+openstack_cinder_pool_capacity_free_gb{name="cinder-ha-cluster@hdd_47bda354e41d47aea7c8fe21cfeb2239#hdd_47bda354e41d47aea7c8fe21cfeb2239",vendor_name="Open Source",volume_backend_name="hdd_47bda354e41d47aea7c8fe21cfeb2239"} 2348.64
+openstack_cinder_pool_capacity_free_gb{name="cinder-ha-cluster@ssd_1e6217f13e334725917619aacef04827#ssd_1e6217f13e334725917619aacef04827",vendor_name="Open Source",volume_backend_name="ssd_1e6217f13e334725917619aacef04827"} 23.89
+openstack_cinder_pool_capacity_free_gb{name="cinder-ha-cluster@ssd_6751e140bd0640b4983e0851eba5243c#ssd_6751e140bd0640b4983e0851eba5243c",vendor_name="Open Source",volume_backend_name="ssd_6751e140bd0640b4983e0851eba5243c"} 23.97
+# HELP openstack_cinder_pool_capacity_total_gb pool_capacity_total_gb
+# TYPE openstack_cinder_pool_capacity_total_gb gauge
+openstack_cinder_pool_capacity_total_gb{name="cinder-ha-cluster@hdd_47bda354e41d47aea7c8fe21cfeb2239#hdd_47bda354e41d47aea7c8fe21cfeb2239",vendor_name="Open Source",volume_backend_name="hdd_47bda354e41d47aea7c8fe21cfeb2239"} 2508.25
+openstack_cinder_pool_capacity_total_gb{name="cinder-ha-cluster@ssd_1e6217f13e334725917619aacef04827#ssd_1e6217f13e334725917619aacef04827",vendor_name="Open Source",volume_backend_name="ssd_1e6217f13e334725917619aacef04827"} 29.59
+openstack_cinder_pool_capacity_total_gb{name="cinder-ha-cluster@ssd_6751e140bd0640b4983e0851eba5243c#ssd_6751e140bd0640b4983e0851eba5243c",vendor_name="Open Source",volume_backend_name="ssd_6751e140bd0640b4983e0851eba5243c"} 354.38
+# HELP openstack_cinder_snapshots snapshots
+# TYPE openstack_cinder_snapshots gauge
+openstack_cinder_snapshots 6
+# HELP openstack_cinder_up up
+# TYPE openstack_cinder_up gauge
+openstack_cinder_up 1
+# HELP openstack_cinder_volume_gb volume_gb
+# TYPE openstack_cinder_volume_gb gauge
+openstack_cinder_volume_gb{bootable="false",id="2cf9a00b-6cca-46d0-8409-1b53ade2d432",name="",server_id="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="false",id="2e9b2ea5-a201-434d-99d1-c270ff17da0e",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="false",id="41f5786e-b770-4402-a56e-38c012d4ca34",name="",server_id="e9935c4d-1ad1-423d-b65d-11a1282def15",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="false",id="43647ecc-f24e-4d97-8462-a1652b51f34a",name="",server_id="430e925b-19f0-4662-ab75-17ebc7d9038a",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_1e6217f13e334725917619aacef04827"} 50
+openstack_cinder_volume_gb{bootable="false",id="4eb6ca1e-3225-4678-b513-4ed80b4c5b14",name="",server_id="8ccda04a-cbf7-4712-8f65-f38a1ca5e713",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="false",id="546f450a-5415-4608-8966-d77799ae8bb4",name="",server_id="b7662bfe-0708-462f-ae3d-54ed19c4f376",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="hdd_47bda354e41d47aea7c8fe21cfeb2239"} 1
+openstack_cinder_volume_gb{bootable="false",id="c2988f75-f974-4280-9cba-7abd5038522e",name="",server_id="081c8d0f-fd18-48ee-a897-6756fb4165ae",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="false",id="cfcd4da4-ec2e-4690-b0c6-04afb3cb8d10",name="image-786e17d9-7f2b-4eb6-b734-35917b168331",server_id="",status="error",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="false",id="d0274549-f562-44f0-a907-e88c7ebfe827",name="image-c2b0bf7f-4df1-462f-aa44-554974bd9378",server_id="",status="error",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="false",id="e20b31e3-712b-4258-b641-e4cc737d9076",name="",server_id="",status="error",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="false",id="ebdc6983-fee8-41c7-9a53-617fe70b0b0d",name="",server_id="d32afe06-2a77-41a7-92d7-d6dd606ed98c",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="false",id="fc3a4d85-0989-48a8-853a-35f828f0d536",name="",server_id="47cf9919-635d-43c8-9716-db7cdf234766",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 80
+openstack_cinder_volume_gb{bootable="true",id="044baf93-1c13-4a16-9965-dc695ff01945",name="",server_id="",status="reserved",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 70
+openstack_cinder_volume_gb{bootable="true",id="141e6665-46db-4d24-b8b4-ff616be82990",name="",server_id="e9935c4d-1ad1-423d-b65d-11a1282def15",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="1548b3ab-8b17-4d3b-8073-8b07ec40748b",name="",server_id="e9935c4d-1ad1-423d-b65d-11a1282def15",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="15aa2617-e360-4de7-8b84-a823c95c3f36",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="195410dd-35a7-4417-bd8b-c9a69ebe985c",name="",server_id="1120bf54-eaf1-40fa-9051-7af66bc2cd9f",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="1fc9fe28-56c4-4d2d-94eb-2ec9618ed645",name="",server_id="afd3a5f1-f5db-4b55-9c6c-9c95e6d435e2",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="22362de4-f22f-4e70-ab65-7ce728ba0c0d",name="",server_id="db6e0067-bfe2-4778-b14a-81af66737674",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="268e4e39-38ee-4c24-83c5-d5b280ec0c16",name="",server_id="c3c685e3-38aa-4a86-81a0-fdf5e946d93a",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="2729d482-4cd0-4256-a23a-2f09a9b3eec7",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="2c843d0a-4f51-4add-8cda-8cf392a12d88",name="",server_id="c3c685e3-38aa-4a86-81a0-fdf5e946d93a",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="34081323-91d0-4da4-80c4-d49cd2910ec7",name="",server_id="d32afe06-2a77-41a7-92d7-d6dd606ed98c",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="true",id="3698c58b-78c5-4812-b3bd-40c17d51c604",name="",server_id="d30dc2c2-1857-42f3-b63f-22b15e6b3fc4",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="38f1042e-dcb3-4bcb-a19f-37c1b1750d98",name="",server_id="d30dc2c2-1857-42f3-b63f-22b15e6b3fc4",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="39091226-419f-4f20-8766-f49e96260093",name="",server_id="d32afe06-2a77-41a7-92d7-d6dd606ed98c",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="true",id="39c3d3b3-8881-4e74-b447-036a21c0af11",name="",server_id="081c8d0f-fd18-48ee-a897-6756fb4165ae",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="3b2a7492-7a62-4045-b6db-9e9938034c2b",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="3ea714e0-c27c-4862-a924-5a178050f1ff",name="",server_id="b87ccecb-ba66-4113-bc99-3ad944a03c4f",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="45d8857b-d693-4954-b017-d5da7a36e8c7",name="",server_id="1decd453-bee9-4955-a145-99be7a52e171",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="4918ae24-6119-4a6d-9e4d-966eec046c98",name="",server_id="d218c958-b58b-46f5-a094-8f32950f098f",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="4a711f0d-f77a-4cfd-acc0-574d1acb9d7c",name="",server_id="61938e3b-a38b-4201-9c47-7ef5b0a366a5",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="4aa291e5-5e7e-4ebf-a559-905a26d6d623",name="",server_id="8ccda04a-cbf7-4712-8f65-f38a1ca5e713",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="true",id="4fafab4e-be0f-45f7-9250-9173648265c9",name="",server_id="1decd453-bee9-4955-a145-99be7a52e171",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="518d9bfd-9ae8-4778-a584-caad61417298",name="",server_id="db6e0067-bfe2-4778-b14a-81af66737674",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="542d034a-b671-4fb7-aa5b-bec27804be1a",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="55979b09-7bf8-463a-9a67-b685ec386bd1",name="",server_id="d30dc2c2-1857-42f3-b63f-22b15e6b3fc4",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="562949cb-2807-4fa8-a4f9-9d2f32053657",name="",server_id="c3c685e3-38aa-4a86-81a0-fdf5e946d93a",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="5ed142d7-fd76-4e52-8223-dddcdd314898",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="621fb4ea-5977-40a3-88b5-3602cd606d30",name="",server_id="afd3a5f1-f5db-4b55-9c6c-9c95e6d435e2",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="69fe1f58-7159-4760-b4dd-b000b5fc028b",name="",server_id="61938e3b-a38b-4201-9c47-7ef5b0a366a5",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="6e2c114e-8e2b-48af-90ca-8135e8a1c8e1",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="true",id="7074c7a0-282a-4558-b1e9-8300cd61a56e",name="",server_id="58b7700e-30f7-47b5-9f1c-c98210320622",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="729f7067-9255-40b5-b61c-b4e2f79f5fd6",name="",server_id="b87ccecb-ba66-4113-bc99-3ad944a03c4f",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="72dd4cfa-4073-4a19-8d6e-90341b1f2c6f",name="",server_id="d218c958-b58b-46f5-a094-8f32950f098f",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="72de9b71-71bf-4ed3-8701-8a9fc85f6458",name="",server_id="61938e3b-a38b-4201-9c47-7ef5b0a366a5",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="7545d339-5808-481a-be85-8d8ed9820207",name="",server_id="430e925b-19f0-4662-ab75-17ebc7d9038a",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_1e6217f13e334725917619aacef04827"} 50
+openstack_cinder_volume_gb{bootable="true",id="785bbf48-c07b-4457-809e-c8e08c9f9511",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 40
+openstack_cinder_volume_gb{bootable="true",id="7b2e2d75-3b96-4a7e-a541-be92992e888a",name="",server_id="2219cfe4-f490-4ef9-a921-99f9c3a9ac37",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="86021270-080f-497e-bb72-f807ea327b96",name="",server_id="58b7700e-30f7-47b5-9f1c-c98210320622",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="95d1328d-0f66-4399-aeb7-8624a74dcf80",name="",server_id="b7662bfe-0708-462f-ae3d-54ed19c4f376",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="9998312b-e11c-4263-af32-679ce8c50c3e",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="true",id="9a271acc-86c6-4428-866e-b60c0a0b0284",name="",server_id="84773e51-837e-4520-8756-354b7875ffdf",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="9e554c42-d733-487c-8c47-411370302e1f",name="",server_id="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="adc8576c-56fb-438d-917d-09682179fb2a",name="",server_id="84773e51-837e-4520-8756-354b7875ffdf",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="b4509209-6895-4fce-8ac1-672688726061",name="",server_id="47cf9919-635d-43c8-9716-db7cdf234766",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 80
+openstack_cinder_volume_gb{bootable="true",id="b848042b-9145-4ee3-aa7f-cb6fa756ff35",name="",server_id="b7662bfe-0708-462f-ae3d-54ed19c4f376",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="b9b3d5ee-3332-4513-b8bf-9011f198830c",name="",server_id="d32afe06-2a77-41a7-92d7-d6dd606ed98c",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="true",id="c3588512-7bd9-4213-9a64-43cd95decf16",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 80
+openstack_cinder_volume_gb{bootable="true",id="c7247c43-0e5a-4245-9c9b-2e0b8eaf5fc4",name="",server_id="8ccda04a-cbf7-4712-8f65-f38a1ca5e713",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 50
+openstack_cinder_volume_gb{bootable="true",id="c7989d4a-acf6-42f3-9a46-2fe30c691160",name="",server_id="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="c841ea1b-8812-4c15-a33a-2ca3cb0cfd2a",name="",server_id="afd3a5f1-f5db-4b55-9c6c-9c95e6d435e2",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="ccc95df4-5778-442d-804f-9a33c97ca8a2",name="",server_id="d218c958-b58b-46f5-a094-8f32950f098f",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="ce1aa6da-6867-4f41-b188-fdcd958988f0",name="",server_id="1120bf54-eaf1-40fa-9051-7af66bc2cd9f",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="ce2d7322-bd29-4091-9cd4-3bf7d38708d4",name="",server_id="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="cea31484-ad48-40c2-927e-298f53e2714d",name="",server_id="58b7700e-30f7-47b5-9f1c-c98210320622",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="cf5d8ac5-8e39-4604-855a-77e923a8b320",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="d0606a5f-04a3-4cfb-a51a-2d30c42e1159",name="",server_id="3ab9bc7e-0144-4ee3-a23a-af552684948a",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="d274ec32-6bea-4903-bcbc-6a5d54ceecb9",name="",server_id="3ab9bc7e-0144-4ee3-a23a-af552684948a",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="d5935fdf-c0c6-4c2e-80f3-d6be5294a5ef",name="",server_id="21515414-f275-40ac-ad68-d5452a4852f2",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 80
+openstack_cinder_volume_gb{bootable="true",id="d724607b-e5cf-4eb4-a0f6-6137dabb6667",name="",server_id="2219cfe4-f490-4ef9-a921-99f9c3a9ac37",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="d829fda7-2054-4bf8-89e2-b6d688ef4391",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="dddfb8e8-9972-421d-a9be-bf85e5a0d776",name="",server_id="b7662bfe-0708-462f-ae3d-54ed19c4f376",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="e2364355-4593-46ab-8cb5-69ddd5fba6a1",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="e5ca5899-1aca-4309-9ec3-d57ac19225cb",name="",server_id="2219cfe4-f490-4ef9-a921-99f9c3a9ac37",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="e8681894-1332-4481-8215-54758605b3af",name="",server_id="db6e0067-bfe2-4778-b14a-81af66737674",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="e8989900-e5a3-4b60-af62-4472914f2151",name="",server_id="1120bf54-eaf1-40fa-9051-7af66bc2cd9f",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="f1c7323e-d3e1-4cd7-8cdf-ac6581408e1d",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="hdd_47bda354e41d47aea7c8fe21cfeb2239"} 50
+openstack_cinder_volume_gb{bootable="true",id="f4309513-22e0-4c4f-8a68-0e776b927683",name="",server_id="1decd453-bee9-4955-a145-99be7a52e171",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 150
+openstack_cinder_volume_gb{bootable="true",id="f715525e-8933-43f1-877f-1f88a1a11a2b",name="",server_id="",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="f925020e-3574-4280-a9e0-c7137e396357",name="",server_id="84773e51-837e-4520-8756-354b7875ffdf",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+openstack_cinder_volume_gb{bootable="true",id="f9b93c61-477c-4876-907a-c3164f802bc6",name="",server_id="b87ccecb-ba66-4113-bc99-3ad944a03c4f",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 100
+# HELP openstack_cinder_volume_status volume_status
+# TYPE openstack_cinder_volume_status gauge
+openstack_cinder_volume_status{bootable="false",id="2cf9a00b-6cca-46d0-8409-1b53ade2d432",name="",server_id="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5",size="50",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="false",id="2e9b2ea5-a201-434d-99d1-c270ff17da0e",name="",server_id="",size="50",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="false",id="41f5786e-b770-4402-a56e-38c012d4ca34",name="",server_id="e9935c4d-1ad1-423d-b65d-11a1282def15",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="false",id="43647ecc-f24e-4d97-8462-a1652b51f34a",name="",server_id="430e925b-19f0-4662-ab75-17ebc7d9038a",size="50",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_1e6217f13e334725917619aacef04827"} 5
+openstack_cinder_volume_status{bootable="false",id="4eb6ca1e-3225-4678-b513-4ed80b4c5b14",name="",server_id="8ccda04a-cbf7-4712-8f65-f38a1ca5e713",size="50",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="false",id="546f450a-5415-4608-8966-d77799ae8bb4",name="",server_id="b7662bfe-0708-462f-ae3d-54ed19c4f376",size="1",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="hdd_47bda354e41d47aea7c8fe21cfeb2239"} 5
+openstack_cinder_volume_status{bootable="false",id="c2988f75-f974-4280-9cba-7abd5038522e",name="",server_id="081c8d0f-fd18-48ee-a897-6756fb4165ae",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="false",id="cfcd4da4-ec2e-4690-b0c6-04afb3cb8d10",name="image-786e17d9-7f2b-4eb6-b734-35917b168331",server_id="",size="100",status="error",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 9
+openstack_cinder_volume_status{bootable="false",id="d0274549-f562-44f0-a907-e88c7ebfe827",name="image-c2b0bf7f-4df1-462f-aa44-554974bd9378",server_id="",size="50",status="error",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 9
+openstack_cinder_volume_status{bootable="false",id="e20b31e3-712b-4258-b641-e4cc737d9076",name="",server_id="",size="100",status="error",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 9
+openstack_cinder_volume_status{bootable="false",id="ebdc6983-fee8-41c7-9a53-617fe70b0b0d",name="",server_id="d32afe06-2a77-41a7-92d7-d6dd606ed98c",size="50",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="false",id="fc3a4d85-0989-48a8-853a-35f828f0d536",name="",server_id="47cf9919-635d-43c8-9716-db7cdf234766",size="80",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="044baf93-1c13-4a16-9965-dc695ff01945",name="",server_id="",size="70",status="reserved",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 2
+openstack_cinder_volume_status{bootable="true",id="141e6665-46db-4d24-b8b4-ff616be82990",name="",server_id="e9935c4d-1ad1-423d-b65d-11a1282def15",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="1548b3ab-8b17-4d3b-8073-8b07ec40748b",name="",server_id="e9935c4d-1ad1-423d-b65d-11a1282def15",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="15aa2617-e360-4de7-8b84-a823c95c3f36",name="",server_id="",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="195410dd-35a7-4417-bd8b-c9a69ebe985c",name="",server_id="1120bf54-eaf1-40fa-9051-7af66bc2cd9f",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="1fc9fe28-56c4-4d2d-94eb-2ec9618ed645",name="",server_id="afd3a5f1-f5db-4b55-9c6c-9c95e6d435e2",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="22362de4-f22f-4e70-ab65-7ce728ba0c0d",name="",server_id="db6e0067-bfe2-4778-b14a-81af66737674",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="268e4e39-38ee-4c24-83c5-d5b280ec0c16",name="",server_id="c3c685e3-38aa-4a86-81a0-fdf5e946d93a",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="2729d482-4cd0-4256-a23a-2f09a9b3eec7",name="",server_id="",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="2c843d0a-4f51-4add-8cda-8cf392a12d88",name="",server_id="c3c685e3-38aa-4a86-81a0-fdf5e946d93a",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="34081323-91d0-4da4-80c4-d49cd2910ec7",name="",server_id="d32afe06-2a77-41a7-92d7-d6dd606ed98c",size="50",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="3698c58b-78c5-4812-b3bd-40c17d51c604",name="",server_id="d30dc2c2-1857-42f3-b63f-22b15e6b3fc4",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="38f1042e-dcb3-4bcb-a19f-37c1b1750d98",name="",server_id="d30dc2c2-1857-42f3-b63f-22b15e6b3fc4",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="39091226-419f-4f20-8766-f49e96260093",name="",server_id="d32afe06-2a77-41a7-92d7-d6dd606ed98c",size="50",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="39c3d3b3-8881-4e74-b447-036a21c0af11",name="",server_id="081c8d0f-fd18-48ee-a897-6756fb4165ae",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="3b2a7492-7a62-4045-b6db-9e9938034c2b",name="",server_id="",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="3ea714e0-c27c-4862-a924-5a178050f1ff",name="",server_id="b87ccecb-ba66-4113-bc99-3ad944a03c4f",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="45d8857b-d693-4954-b017-d5da7a36e8c7",name="",server_id="1decd453-bee9-4955-a145-99be7a52e171",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="4918ae24-6119-4a6d-9e4d-966eec046c98",name="",server_id="d218c958-b58b-46f5-a094-8f32950f098f",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="4a711f0d-f77a-4cfd-acc0-574d1acb9d7c",name="",server_id="61938e3b-a38b-4201-9c47-7ef5b0a366a5",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="4aa291e5-5e7e-4ebf-a559-905a26d6d623",name="",server_id="8ccda04a-cbf7-4712-8f65-f38a1ca5e713",size="50",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="4fafab4e-be0f-45f7-9250-9173648265c9",name="",server_id="1decd453-bee9-4955-a145-99be7a52e171",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="518d9bfd-9ae8-4778-a584-caad61417298",name="",server_id="db6e0067-bfe2-4778-b14a-81af66737674",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="542d034a-b671-4fb7-aa5b-bec27804be1a",name="",server_id="",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="55979b09-7bf8-463a-9a67-b685ec386bd1",name="",server_id="d30dc2c2-1857-42f3-b63f-22b15e6b3fc4",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="562949cb-2807-4fa8-a4f9-9d2f32053657",name="",server_id="c3c685e3-38aa-4a86-81a0-fdf5e946d93a",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="5ed142d7-fd76-4e52-8223-dddcdd314898",name="",server_id="",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="621fb4ea-5977-40a3-88b5-3602cd606d30",name="",server_id="afd3a5f1-f5db-4b55-9c6c-9c95e6d435e2",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="69fe1f58-7159-4760-b4dd-b000b5fc028b",name="",server_id="61938e3b-a38b-4201-9c47-7ef5b0a366a5",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="6e2c114e-8e2b-48af-90ca-8135e8a1c8e1",name="",server_id="",size="50",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="7074c7a0-282a-4558-b1e9-8300cd61a56e",name="",server_id="58b7700e-30f7-47b5-9f1c-c98210320622",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="729f7067-9255-40b5-b61c-b4e2f79f5fd6",name="",server_id="b87ccecb-ba66-4113-bc99-3ad944a03c4f",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="72dd4cfa-4073-4a19-8d6e-90341b1f2c6f",name="",server_id="d218c958-b58b-46f5-a094-8f32950f098f",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="72de9b71-71bf-4ed3-8701-8a9fc85f6458",name="",server_id="61938e3b-a38b-4201-9c47-7ef5b0a366a5",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="7545d339-5808-481a-be85-8d8ed9820207",name="",server_id="430e925b-19f0-4662-ab75-17ebc7d9038a",size="50",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_1e6217f13e334725917619aacef04827"} 1
+openstack_cinder_volume_status{bootable="true",id="785bbf48-c07b-4457-809e-c8e08c9f9511",name="",server_id="",size="40",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="7b2e2d75-3b96-4a7e-a541-be92992e888a",name="",server_id="2219cfe4-f490-4ef9-a921-99f9c3a9ac37",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="86021270-080f-497e-bb72-f807ea327b96",name="",server_id="58b7700e-30f7-47b5-9f1c-c98210320622",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="95d1328d-0f66-4399-aeb7-8624a74dcf80",name="",server_id="b7662bfe-0708-462f-ae3d-54ed19c4f376",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="9998312b-e11c-4263-af32-679ce8c50c3e",name="",server_id="",size="50",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="9a271acc-86c6-4428-866e-b60c0a0b0284",name="",server_id="84773e51-837e-4520-8756-354b7875ffdf",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="9e554c42-d733-487c-8c47-411370302e1f",name="",server_id="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="adc8576c-56fb-438d-917d-09682179fb2a",name="",server_id="84773e51-837e-4520-8756-354b7875ffdf",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="b4509209-6895-4fce-8ac1-672688726061",name="",server_id="47cf9919-635d-43c8-9716-db7cdf234766",size="80",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="b848042b-9145-4ee3-aa7f-cb6fa756ff35",name="",server_id="b7662bfe-0708-462f-ae3d-54ed19c4f376",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="b9b3d5ee-3332-4513-b8bf-9011f198830c",name="",server_id="d32afe06-2a77-41a7-92d7-d6dd606ed98c",size="50",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="c3588512-7bd9-4213-9a64-43cd95decf16",name="",server_id="",size="80",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="c7247c43-0e5a-4245-9c9b-2e0b8eaf5fc4",name="",server_id="8ccda04a-cbf7-4712-8f65-f38a1ca5e713",size="50",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="c7989d4a-acf6-42f3-9a46-2fe30c691160",name="",server_id="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="c841ea1b-8812-4c15-a33a-2ca3cb0cfd2a",name="",server_id="afd3a5f1-f5db-4b55-9c6c-9c95e6d435e2",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="ccc95df4-5778-442d-804f-9a33c97ca8a2",name="",server_id="d218c958-b58b-46f5-a094-8f32950f098f",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="ce1aa6da-6867-4f41-b188-fdcd958988f0",name="",server_id="1120bf54-eaf1-40fa-9051-7af66bc2cd9f",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="ce2d7322-bd29-4091-9cd4-3bf7d38708d4",name="",server_id="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="cea31484-ad48-40c2-927e-298f53e2714d",name="",server_id="58b7700e-30f7-47b5-9f1c-c98210320622",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="cf5d8ac5-8e39-4604-855a-77e923a8b320",name="",server_id="",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="d0606a5f-04a3-4cfb-a51a-2d30c42e1159",name="",server_id="3ab9bc7e-0144-4ee3-a23a-af552684948a",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="d274ec32-6bea-4903-bcbc-6a5d54ceecb9",name="",server_id="3ab9bc7e-0144-4ee3-a23a-af552684948a",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="d5935fdf-c0c6-4c2e-80f3-d6be5294a5ef",name="",server_id="21515414-f275-40ac-ad68-d5452a4852f2",size="80",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="d724607b-e5cf-4eb4-a0f6-6137dabb6667",name="",server_id="2219cfe4-f490-4ef9-a921-99f9c3a9ac37",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="d829fda7-2054-4bf8-89e2-b6d688ef4391",name="",server_id="",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="dddfb8e8-9972-421d-a9be-bf85e5a0d776",name="",server_id="b7662bfe-0708-462f-ae3d-54ed19c4f376",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="e2364355-4593-46ab-8cb5-69ddd5fba6a1",name="",server_id="",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="e5ca5899-1aca-4309-9ec3-d57ac19225cb",name="",server_id="2219cfe4-f490-4ef9-a921-99f9c3a9ac37",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="e8681894-1332-4481-8215-54758605b3af",name="",server_id="db6e0067-bfe2-4778-b14a-81af66737674",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="e8989900-e5a3-4b60-af62-4472914f2151",name="",server_id="1120bf54-eaf1-40fa-9051-7af66bc2cd9f",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="f1c7323e-d3e1-4cd7-8cdf-ac6581408e1d",name="",server_id="",size="50",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="hdd_47bda354e41d47aea7c8fe21cfeb2239"} 1
+openstack_cinder_volume_status{bootable="true",id="f4309513-22e0-4c4f-8a68-0e776b927683",name="",server_id="1decd453-bee9-4955-a145-99be7a52e171",size="150",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="f715525e-8933-43f1-877f-1f88a1a11a2b",name="",server_id="",size="100",status="available",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 1
+openstack_cinder_volume_status{bootable="true",id="f925020e-3574-4280-a9e0-c7137e396357",name="",server_id="84773e51-837e-4520-8756-354b7875ffdf",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+openstack_cinder_volume_status{bootable="true",id="f9b93c61-477c-4876-907a-c3164f802bc6",name="",server_id="b87ccecb-ba66-4113-bc99-3ad944a03c4f",size="100",status="in-use",tenant_id="8665562a290e4da89f7612396a1ad580",volume_type="ssd_6751e140bd0640b4983e0851eba5243c"} 5
+# HELP openstack_cinder_volume_status_counter volume_status_counter
+# TYPE openstack_cinder_volume_status_counter gauge
+openstack_cinder_volume_status_counter{status="attaching"} 0
+openstack_cinder_volume_status_counter{status="available"} 28
+openstack_cinder_volume_status_counter{status="awaiting-transfer"} 0
+openstack_cinder_volume_status_counter{status="backing-up"} 0
+openstack_cinder_volume_status_counter{status="creating"} 0
+openstack_cinder_volume_status_counter{status="deleting"} 0
+openstack_cinder_volume_status_counter{status="detaching"} 0
+openstack_cinder_volume_status_counter{status="downloading"} 0
+openstack_cinder_volume_status_counter{status="error"} 3
+openstack_cinder_volume_status_counter{status="error_backing-up"} 0
+openstack_cinder_volume_status_counter{status="error_deleting"} 0
+openstack_cinder_volume_status_counter{status="error_extending"} 0
+openstack_cinder_volume_status_counter{status="error_restoring"} 0
+openstack_cinder_volume_status_counter{status="extending"} 0
+openstack_cinder_volume_status_counter{status="in-use"} 50
+openstack_cinder_volume_status_counter{status="maintenance"} 0
+openstack_cinder_volume_status_counter{status="reserved"} 1
+openstack_cinder_volume_status_counter{status="restoring-backup"} 0
+openstack_cinder_volume_status_counter{status="retyping"} 0
+openstack_cinder_volume_status_counter{status="uploading"} 0
+# HELP openstack_cinder_volumes volumes
+# TYPE openstack_cinder_volumes gauge
+openstack_cinder_volumes 82
+# HELP openstack_glance_image_bytes image_bytes
+# TYPE openstack_glance_image_bytes gauge
+openstack_glance_image_bytes{id="12373dd3-7ad6-4362-baa6-a68bce3565c2",name="qemu_agent_test2",tenant_id="8665562a290e4da89f7612396a1ad580"} 1.073741824e+11
+openstack_glance_image_bytes{id="19bfde96-bf7b-4b44-9be3-52d28e8845a1",name="kylinSpecialImageVirtio_3.0.6",tenant_id="8665562a290e4da89f7612396a1ad580"} 3.162112e+06
+openstack_glance_image_bytes{id="1c962418-56f8-462e-92cc-1acb6f183840",name="test11",tenant_id="8665562a290e4da89f7612396a1ad580"} 4.983554048e+09
+openstack_glance_image_bytes{id="1dfd7cf6-c774-4117-8d56-63eb252f141e",name="win7",tenant_id="8665562a290e4da89f7612396a1ad580"} 2.502909952e+09
+openstack_glance_image_bytes{id="275f182a-938e-49c1-a603-748d1203d04c",name="specialImageVirtio_3.0.3",tenant_id="8665562a290e4da89f7612396a1ad580"} 9.49899264e+08
+openstack_glance_image_bytes{id="3a0ca4e2-9a8d-4bfe-98d0-997a361ec70e",name="ubuntu20",tenant_id="8665562a290e4da89f7612396a1ad580"} 2.715254784e+09
+openstack_glance_image_bytes{id="3c481b0b-6d42-46e6-a9d1-112d43bf84bc",name="win10_qcow2",tenant_id="8665562a290e4da89f7612396a1ad580"} 6.442450944e+10
+openstack_glance_image_bytes{id="400b8601-eb5c-4645-8af7-57b5d13854c5",name="win11-2",tenant_id="8665562a290e4da89f7612396a1ad580"} 4.64945152e+09
+openstack_glance_image_bytes{id="4a39b859-6f3e-47df-ad70-b4aeea167ccd",name="windows10",tenant_id="8665562a290e4da89f7612396a1ad580"} 5.044211712e+09
+openstack_glance_image_bytes{id="6d972ad9-672a-4d98-8033-12970c4f9c1d",name="ubuntu22",tenant_id="8665562a290e4da89f7612396a1ad580"} 3.654957056e+09
+openstack_glance_image_bytes{id="7751c386-bc1f-4ae6-a5f0-047818e86b4a",name="encp2",tenant_id="8665562a290e4da89f7612396a1ad580"} 6.602883072e+09
+openstack_glance_image_bytes{id="ae59cedd-bed6-4a13-945d-16e4d200f0df",name="kylin",tenant_id="8665562a290e4da89f7612396a1ad580"} 4.696293376e+09
+openstack_glance_image_bytes{id="b00b6051-ec59-4d15-96f0-2fb0c2a86d00",name="encp",tenant_id="8665562a290e4da89f7612396a1ad580"} 6.602883072e+09
+openstack_glance_image_bytes{id="b8b82757-89a6-49fd-b143-9995a6bf018b",name="llq-test-correct",tenant_id="8665562a290e4da89f7612396a1ad580"} 0
+openstack_glance_image_bytes{id="c801160f-61c4-42ac-92a9-7cd7d74cfc07",name="llq-test-error",tenant_id="8665562a290e4da89f7612396a1ad580"} 0
+openstack_glance_image_bytes{id="dfd96838-536c-4718-92b6-dd024ec3ac16",name="ubuntu24",tenant_id="8665562a290e4da89f7612396a1ad580"} 6.114656256e+09
+openstack_glance_image_bytes{id="e5ea6da8-197d-42b8-a2cc-306cb2b8699d",name="kylinSpecialImageVirtio_3.0.3",tenant_id="8665562a290e4da89f7612396a1ad580"} 3.162112e+06
+openstack_glance_image_bytes{id="f42ff796-4488-416b-8be4-650f13c0b2f6",name="ubuntu-18-04",tenant_id="8665562a290e4da89f7612396a1ad580"} 1.9218432e+09
+openstack_glance_image_bytes{id="fba89504-e426-4b26-8021-969b1d5d433e",name="specialImageVirtio_3.0.6",tenant_id="8665562a290e4da89f7612396a1ad580"} 9.49899264e+08
+# HELP openstack_glance_images images
+# TYPE openstack_glance_images gauge
+openstack_glance_images 19
+# HELP openstack_glance_up up
+# TYPE openstack_glance_up gauge
+openstack_glance_up 1
+# HELP openstack_heat_stack_status_counter stack_status_counter
+# TYPE openstack_heat_stack_status_counter gauge
+openstack_heat_stack_status_counter{status="ADOPT_COMPLETE"} 0
+openstack_heat_stack_status_counter{status="ADOPT_FAILED"} 0
+openstack_heat_stack_status_counter{status="ADOPT_IN_PROGRESS"} 0
+openstack_heat_stack_status_counter{status="CHECK_COMPLETE"} 0
+openstack_heat_stack_status_counter{status="CHECK_FAILED"} 0
+openstack_heat_stack_status_counter{status="CHECK_IN_PROGRESS"} 0
+openstack_heat_stack_status_counter{status="CREATE_COMPLETE"} 0
+openstack_heat_stack_status_counter{status="CREATE_FAILED"} 0
+openstack_heat_stack_status_counter{status="CREATE_IN_PROGRESS"} 0
+openstack_heat_stack_status_counter{status="DELETE_COMPLETE"} 0
+openstack_heat_stack_status_counter{status="DELETE_FAILED"} 0
+openstack_heat_stack_status_counter{status="DELETE_IN_PROGRESS"} 0
+openstack_heat_stack_status_counter{status="INIT_COMPLETE"} 0
+openstack_heat_stack_status_counter{status="INIT_FAILED"} 0
+openstack_heat_stack_status_counter{status="INIT_IN_PROGRESS"} 0
+openstack_heat_stack_status_counter{status="RESUME_COMPLETE"} 0
+openstack_heat_stack_status_counter{status="RESUME_FAILED"} 0
+openstack_heat_stack_status_counter{status="RESUME_IN_PROGRESS"} 0
+openstack_heat_stack_status_counter{status="ROLLBACK_COMPLETE"} 0
+openstack_heat_stack_status_counter{status="ROLLBACK_FAILED"} 0
+openstack_heat_stack_status_counter{status="ROLLBACK_IN_PROGRESS"} 0
+openstack_heat_stack_status_counter{status="SNAPSHOT_COMPLETE"} 0
+openstack_heat_stack_status_counter{status="SNAPSHOT_FAILED"} 0
+openstack_heat_stack_status_counter{status="SNAPSHOT_IN_PROGRESS"} 0
+openstack_heat_stack_status_counter{status="SUSPEND_COMPLETE"} 0
+openstack_heat_stack_status_counter{status="SUSPEND_FAILED"} 0
+openstack_heat_stack_status_counter{status="SUSPEND_IN_PROGRESS"} 0
+openstack_heat_stack_status_counter{status="UPDATE_COMPLETE"} 0
+openstack_heat_stack_status_counter{status="UPDATE_FAILED"} 0
+openstack_heat_stack_status_counter{status="UPDATE_IN_PROGRESS"} 0
+# HELP openstack_heat_up up
+# TYPE openstack_heat_up gauge
+openstack_heat_up 1
+# HELP openstack_identity_domains domains
+# TYPE openstack_identity_domains gauge
+openstack_identity_domains 2
+# HELP openstack_identity_groups groups
+# TYPE openstack_identity_groups gauge
+openstack_identity_groups 0
+# HELP openstack_identity_project_info project_info
+# TYPE openstack_identity_project_info gauge
+openstack_identity_project_info{description="",domain_id="default",enabled="true",id="ccdf55a5a11d4535a11e08aa222af66a",is_domain="false",name="service",parent_id="default"} 1
+openstack_identity_project_info{description="Bootstrap project for initializing the cloud.",domain_id="default",enabled="true",id="8665562a290e4da89f7612396a1ad580",is_domain="false",name="admin",parent_id="default"} 1
+# HELP openstack_identity_projects projects
+# TYPE openstack_identity_projects gauge
+openstack_identity_projects 2
+# HELP openstack_identity_regions regions
+# TYPE openstack_identity_regions gauge
+openstack_identity_regions 1
+# HELP openstack_identity_up up
+# TYPE openstack_identity_up gauge
+openstack_identity_up 1
+# HELP openstack_identity_users users
+# TYPE openstack_identity_users gauge
+openstack_identity_users 8
+# HELP openstack_neutron_agent_state agent_state
+# TYPE openstack_neutron_agent_state counter
+openstack_neutron_agent_state{adminState="up",availability_zone="",hostname="vcs-node0",id="72e07f6e-c5cc-4d80-b955-b10d986de94b",service="neutron-metadata-agent"} 1
+openstack_neutron_agent_state{adminState="up",availability_zone="",hostname="vcs-node0",id="f0c66d9a-ee0c-4790-af6d-29b948db78e0",service="neutron-openvswitch-agent"} 1
+openstack_neutron_agent_state{adminState="up",availability_zone="nova",hostname="vcs-node0",id="23286fe7-65a0-4e99-af1c-1d0cb8610b4e",service="neutron-dhcp-agent"} 1
+openstack_neutron_agent_state{adminState="up",availability_zone="nova",hostname="vcs-node0",id="ce0f5dba-72bc-4a5f-b269-4da1bda4ef80",service="neutron-l3-agent"} 1
+# HELP openstack_neutron_floating_ip floating_ip
+# TYPE openstack_neutron_floating_ip gauge
+openstack_neutron_floating_ip{floating_ip_address="10.15.252.2",floating_network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",id="18d57c38-c42d-483b-9785-633eaae802bb",project_id="8665562a290e4da89f7612396a1ad580",router_id="891f722d-59c7-4770-8d0a-dc87538e7599",status="ACTIVE"} 1
+openstack_neutron_floating_ip{floating_ip_address="10.15.252.3",floating_network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",id="75a4ca38-7166-4e55-af54-02c0ba35ced3",project_id="8665562a290e4da89f7612396a1ad580",router_id="891f722d-59c7-4770-8d0a-dc87538e7599",status="ACTIVE"} 1
+openstack_neutron_floating_ip{floating_ip_address="10.15.252.5",floating_network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",id="d7cfc17c-a2ee-4284-b87a-f6a49c2d0492",project_id="8665562a290e4da89f7612396a1ad580",router_id="891f722d-59c7-4770-8d0a-dc87538e7599",status="ACTIVE"} 1
+openstack_neutron_floating_ip{floating_ip_address="10.15.252.8",floating_network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",id="e4c891a5-5a62-4ada-8f36-28e992783161",project_id="8665562a290e4da89f7612396a1ad580",router_id="891f722d-59c7-4770-8d0a-dc87538e7599",status="ACTIVE"} 1
+# HELP openstack_neutron_floating_ips floating_ips
+# TYPE openstack_neutron_floating_ips gauge
+openstack_neutron_floating_ips 4
+# HELP openstack_neutron_floating_ips_associated_not_active floating_ips_associated_not_active
+# TYPE openstack_neutron_floating_ips_associated_not_active gauge
+openstack_neutron_floating_ips_associated_not_active 0
+# HELP openstack_neutron_l3_agent_of_router l3_agent_of_router
+# TYPE openstack_neutron_l3_agent_of_router gauge
+openstack_neutron_l3_agent_of_router{agent_admin_up="true",agent_alive="true",agent_host="vcs-node0",ha_state="",l3_agent_id="ce0f5dba-72bc-4a5f-b269-4da1bda4ef80",router_id="891f722d-59c7-4770-8d0a-dc87538e7599"} 1
+# HELP openstack_neutron_network_ip_availabilities_total network_ip_availabilities_total
+# TYPE openstack_neutron_network_ip_availabilities_total gauge
+openstack_neutron_network_ip_availabilities_total{cidr="10.15.252.0/25",ip_version="4",network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",network_name="vlan2521",project_id="8665562a290e4da89f7612396a1ad580",subnet_name=""} 125
+openstack_neutron_network_ip_availabilities_total{cidr="192.168.1.0/24",ip_version="4",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",network_name="vlan4089",project_id="8665562a290e4da89f7612396a1ad580",subnet_name=""} 253
+openstack_neutron_network_ip_availabilities_total{cidr="192.168.100.0/24",ip_version="4",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",network_name="tenant_net",project_id="8665562a290e4da89f7612396a1ad580",subnet_name=""} 254
+openstack_neutron_network_ip_availabilities_total{cidr="192.168.101.0/24",ip_version="4",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",network_name="vlan4089",project_id="8665562a290e4da89f7612396a1ad580",subnet_name=""} 125
+# HELP openstack_neutron_network_ip_availabilities_used network_ip_availabilities_used
+# TYPE openstack_neutron_network_ip_availabilities_used gauge
+openstack_neutron_network_ip_availabilities_used{cidr="10.15.252.0/25",ip_version="4",network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",network_name="vlan2521",project_id="8665562a290e4da89f7612396a1ad580",subnet_name=""} 6
+openstack_neutron_network_ip_availabilities_used{cidr="192.168.1.0/24",ip_version="4",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",network_name="vlan4089",project_id="8665562a290e4da89f7612396a1ad580",subnet_name=""} 8
+openstack_neutron_network_ip_availabilities_used{cidr="192.168.100.0/24",ip_version="4",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",network_name="tenant_net",project_id="8665562a290e4da89f7612396a1ad580",subnet_name=""} 11
+openstack_neutron_network_ip_availabilities_used{cidr="192.168.101.0/24",ip_version="4",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",network_name="vlan4089",project_id="8665562a290e4da89f7612396a1ad580",subnet_name=""} 6
+# HELP openstack_neutron_networks networks
+# TYPE openstack_neutron_networks gauge
+openstack_neutron_networks 3
+# HELP openstack_neutron_port port
+# TYPE openstack_neutron_port gauge
+openstack_neutron_port{admin_state_up="true",binding_vif_type="distributed",device_owner="network:router_interface_distributed",mac_address="fa:16:3e:65:07:0e",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="17088ea0-0405-45d1-92b7-ab1187dad879"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="distributed",device_owner="network:router_interface_distributed",mac_address="fa:16:3e:a9:fb:b7",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="30852628-df0a-4f5b-812c-682b1bd4b06a"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:11:c4:01",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="3446e88a-4ce1-4753-91fb-9d061d4a90db"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:15:63:0c",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="309d4f1f-ecda-4a12-b1f0-fd038c77ec0d"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:16:7d:47",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="889260f8-f6cd-45ca-9cc3-16fe990e1d3f"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:26:b9:b7",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="9e31e735-f80b-41b1-8a02-0f81e3216b0a"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:43:5a:5c",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="20df1b8f-1c32-4e16-92d9-c0a1a7937771"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:45:59:93",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="ded6d5c5-db96-4987-a85b-f98b38cc80cb"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:48:c8:4d",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="916a77a2-7e2e-4b00-a592-504e2294e3b7"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:66:5d:92",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="a9276712-fecb-4821-b4a0-94de446d6be0"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:69:8d:de",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="4736ec82-647d-4423-b224-ad293b7b3556"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:72:42:39",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="d85fa6dc-9b6a-4dee-818d-a1780c034821"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:c6:bf:b6",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="19b5db19-c357-4148-aae4-31abb2b6f7a1"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:c8:40:ec",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="ca26cfaa-b04e-4e02-8b23-8ab85dfd152c"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:c9:ca:a2",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="90a8f621-35c7-4085-a8ac-e4d35b74a4a1"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:cf:57:51",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="a9a926e7-618b-4f24-8bcd-17a2be822e15"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:d0:e2:3a",network_id="08b63cfe-3faf-4e60-b08c-1808431447a9",status="ACTIVE",uuid="fd02b671-3550-4f02-9b04-2bd4107a8263"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:df:c3:6d",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="88f4ba35-6d0e-4e3f-a931-df0094c4ee9e"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:e1:48:a5",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="9a498612-ca1c-40b8-9eea-c82c64bcfecd"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:e9:e6:72",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="fbc0826b-49a7-450d-81f8-724003be22db"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="compute:nova",mac_address="fa:16:3e:fd:20:ab",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="66f3f368-7511-41b5-831c-2525c3856c18"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="network:dhcp",mac_address="fa:16:3e:18:ed:01",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="c3b28394-9a8c-4752-9ed4-87365f37f550"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="network:floatingip_agent_gateway",mac_address="fa:16:3e:10:67:74",network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",status="ACTIVE",uuid="2adaab18-3ffd-4532-bed5-cd992a850de1"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="network:router_centralized_snat",mac_address="fa:16:3e:46:e0:b3",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="ea958c93-3184-4d20-99f3-a1a1e7c05313"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="network:router_centralized_snat",mac_address="fa:16:3e:a9:71:65",network_id="98a3651d-c2d1-4970-815d-ee11d9ff9736",status="ACTIVE",uuid="755312ac-746d-4990-9dc6-b094cae4a4c3"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="ovs",device_owner="network:router_gateway",mac_address="fa:16:3e:b8:3a:7b",network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",status="ACTIVE",uuid="fb044fc7-eafa-4a0f-9b8f-f8bb4e6e1e4b"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="unbound",device_owner="network:floatingip",mac_address="fa:16:3e:07:fa:ca",network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",status="N/A",uuid="5ae8f9f8-cfc8-42ee-aafe-b8819583fe48"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="unbound",device_owner="network:floatingip",mac_address="fa:16:3e:db:59:05",network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",status="N/A",uuid="7b6979f1-54b5-4cd2-96c4-4d4ad9944d9a"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="unbound",device_owner="network:floatingip",mac_address="fa:16:3e:e7:2e:be",network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",status="N/A",uuid="a3128130-c677-461d-86b2-5dd37014e1a4"} 1
+openstack_neutron_port{admin_state_up="true",binding_vif_type="unbound",device_owner="network:floatingip",mac_address="fa:16:3e:eb:bd:77",network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",status="N/A",uuid="7ebb8504-51ef-40b7-b1f3-561dff91f556"} 1
+# HELP openstack_neutron_ports ports
+# TYPE openstack_neutron_ports gauge
+openstack_neutron_ports 30
+# HELP openstack_neutron_ports_lb_not_active ports_lb_not_active
+# TYPE openstack_neutron_ports_lb_not_active gauge
+openstack_neutron_ports_lb_not_active 0
+# HELP openstack_neutron_ports_no_ips ports_no_ips
+# TYPE openstack_neutron_ports_no_ips gauge
+openstack_neutron_ports_no_ips 0
+# HELP openstack_neutron_router router
+# TYPE openstack_neutron_router gauge
+openstack_neutron_router{admin_state_up="true",external_network_id="17ebdfa2-1059-4bd0-9f04-f21fa3880d97",id="891f722d-59c7-4770-8d0a-dc87538e7599",name="vlan2521",project_id="8665562a290e4da89f7612396a1ad580",status="ACTIVE"} 1
+# HELP openstack_neutron_routers routers
+# TYPE openstack_neutron_routers gauge
+openstack_neutron_routers 1
+# HELP openstack_neutron_routers_not_active routers_not_active
+# TYPE openstack_neutron_routers_not_active gauge
+openstack_neutron_routers_not_active 0
+# HELP openstack_neutron_security_groups security_groups
+# TYPE openstack_neutron_security_groups gauge
+openstack_neutron_security_groups 3
+# HELP openstack_neutron_subnets subnets
+# TYPE openstack_neutron_subnets gauge
+openstack_neutron_subnets 4
+# HELP openstack_neutron_up up
+# TYPE openstack_neutron_up gauge
+openstack_neutron_up 1
+# HELP openstack_nova_agent_state agent_state
+# TYPE openstack_nova_agent_state counter
+openstack_nova_agent_state{adminState="enabled",disabledReason="",hostname="vcs-node0",id="1",service="nova-conductor",zone="internal"} 1
+openstack_nova_agent_state{adminState="enabled",disabledReason="",hostname="vcs-node0",id="1",service="nova-scheduler",zone="internal"} 1
+openstack_nova_agent_state{adminState="enabled",disabledReason="",hostname="vcs-node0",id="5",service="nova-compute",zone="nova"} 1
+# HELP openstack_nova_availability_zones availability_zones
+# TYPE openstack_nova_availability_zones gauge
+openstack_nova_availability_zones 1
+# HELP openstack_nova_current_workload current_workload
+# TYPE openstack_nova_current_workload gauge
+openstack_nova_current_workload{aggregates="",availability_zone="",hostname="vcs-node0"} 0
+# HELP openstack_nova_flavors flavors
+# TYPE openstack_nova_flavors gauge
+openstack_nova_flavors 25
+# HELP openstack_nova_free_disk_bytes free_disk_bytes
+# TYPE openstack_nova_free_disk_bytes gauge
+openstack_nova_free_disk_bytes{aggregates="",availability_zone="",hostname="vcs-node0"} 3.479997251584e+12
+# HELP openstack_nova_limits_instances_max limits_instances_max
+# TYPE openstack_nova_limits_instances_max gauge
+openstack_nova_limits_instances_max{tenant="admin",tenant_id="8665562a290e4da89f7612396a1ad580"} -1
+openstack_nova_limits_instances_max{tenant="service",tenant_id="ccdf55a5a11d4535a11e08aa222af66a"} -1
+# HELP openstack_nova_limits_instances_used limits_instances_used
+# TYPE openstack_nova_limits_instances_used gauge
+openstack_nova_limits_instances_used{tenant="admin",tenant_id="8665562a290e4da89f7612396a1ad580"} 22
+openstack_nova_limits_instances_used{tenant="service",tenant_id="ccdf55a5a11d4535a11e08aa222af66a"} 0
+# HELP openstack_nova_limits_memory_max limits_memory_max
+# TYPE openstack_nova_limits_memory_max gauge
+openstack_nova_limits_memory_max{tenant="admin",tenant_id="8665562a290e4da89f7612396a1ad580"} -1
+openstack_nova_limits_memory_max{tenant="service",tenant_id="ccdf55a5a11d4535a11e08aa222af66a"} -1
+# HELP openstack_nova_limits_memory_used limits_memory_used
+# TYPE openstack_nova_limits_memory_used gauge
+openstack_nova_limits_memory_used{tenant="admin",tenant_id="8665562a290e4da89f7612396a1ad580"} 157696
+openstack_nova_limits_memory_used{tenant="service",tenant_id="ccdf55a5a11d4535a11e08aa222af66a"} 0
+# HELP openstack_nova_limits_vcpus_max limits_vcpus_max
+# TYPE openstack_nova_limits_vcpus_max gauge
+openstack_nova_limits_vcpus_max{tenant="admin",tenant_id="8665562a290e4da89f7612396a1ad580"} -1
+openstack_nova_limits_vcpus_max{tenant="service",tenant_id="ccdf55a5a11d4535a11e08aa222af66a"} -1
+# HELP openstack_nova_limits_vcpus_used limits_vcpus_used
+# TYPE openstack_nova_limits_vcpus_used gauge
+openstack_nova_limits_vcpus_used{tenant="admin",tenant_id="8665562a290e4da89f7612396a1ad580"} 88
+openstack_nova_limits_vcpus_used{tenant="service",tenant_id="ccdf55a5a11d4535a11e08aa222af66a"} 0
+# HELP openstack_nova_local_storage_available_bytes local_storage_available_bytes
+# TYPE openstack_nova_local_storage_available_bytes gauge
+openstack_nova_local_storage_available_bytes{aggregates="",availability_zone="",hostname="vcs-node0"} 3.479997251584e+12
+# HELP openstack_nova_local_storage_used_bytes local_storage_used_bytes
+# TYPE openstack_nova_local_storage_used_bytes gauge
+openstack_nova_local_storage_used_bytes{aggregates="",availability_zone="",hostname="vcs-node0"} 0
+# HELP openstack_nova_memory_available_bytes memory_available_bytes
+# TYPE openstack_nova_memory_available_bytes gauge
+openstack_nova_memory_available_bytes{aggregates="",availability_zone="",hostname="vcs-node0"} 4.0378564608e+11
+# HELP openstack_nova_memory_used_bytes memory_used_bytes
+# TYPE openstack_nova_memory_used_bytes gauge
+openstack_nova_memory_used_bytes{aggregates="",availability_zone="",hostname="vcs-node0"} 1.73946175488e+11
+# HELP openstack_nova_running_vms running_vms
+# TYPE openstack_nova_running_vms gauge
+openstack_nova_running_vms{aggregates="",availability_zone="",hostname="vcs-node0"} 22
+# HELP openstack_nova_security_groups security_groups
+# TYPE openstack_nova_security_groups gauge
+openstack_nova_security_groups 3
+# HELP openstack_nova_server_local_gb server_local_gb
+# TYPE openstack_nova_server_local_gb gauge
+openstack_nova_server_local_gb{id="081c8d0f-fd18-48ee-a897-6756fb4165ae",name="T-2025112700000005",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="1120bf54-eaf1-40fa-9051-7af66bc2cd9f",name="VM-2025112700000003",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="1decd453-bee9-4955-a145-99be7a52e171",name="VM-2025120100000003",tenant_id="8665562a290e4da89f7612396a1ad580"} 150
+openstack_nova_server_local_gb{id="21515414-f275-40ac-ad68-d5452a4852f2",name="VM-2026040200000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 80
+openstack_nova_server_local_gb{id="2219cfe4-f490-4ef9-a921-99f9c3a9ac37",name="VM-2026031200000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="3ab9bc7e-0144-4ee3-a23a-af552684948a",name="VM-2026032600000004",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="430e925b-19f0-4662-ab75-17ebc7d9038a",name="T-2026033000000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 50
+openstack_nova_server_local_gb{id="47cf9919-635d-43c8-9716-db7cdf234766",name="T-2026033000000003",tenant_id="8665562a290e4da89f7612396a1ad580"} 80
+openstack_nova_server_local_gb{id="58b7700e-30f7-47b5-9f1c-c98210320622",name="VM-2026020300000003",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="61938e3b-a38b-4201-9c47-7ef5b0a366a5",name="VM-2026032700000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="84773e51-837e-4520-8756-354b7875ffdf",name="VM-2026021200000028",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="8ccda04a-cbf7-4712-8f65-f38a1ca5e713",name="T-2026032500000006",tenant_id="8665562a290e4da89f7612396a1ad580"} 50
+openstack_nova_server_local_gb{id="afd3a5f1-f5db-4b55-9c6c-9c95e6d435e2",name="VM-2026010800000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="b7662bfe-0708-462f-ae3d-54ed19c4f376",name="VM-2026030400000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="b87ccecb-ba66-4113-bc99-3ad944a03c4f",name="VM-2026022500000003",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="c3c685e3-38aa-4a86-81a0-fdf5e946d93a",name="VM-2026030300000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="d218c958-b58b-46f5-a094-8f32950f098f",name="VM-2026031600000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="d30dc2c2-1857-42f3-b63f-22b15e6b3fc4",name="VM-2026032700000002",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="d32afe06-2a77-41a7-92d7-d6dd606ed98c",name="VM-2026032900000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 50
+openstack_nova_server_local_gb{id="db6e0067-bfe2-4778-b14a-81af66737674",name="VM-2025120800000005",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="e9935c4d-1ad1-423d-b65d-11a1282def15",name="T-2025112700000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+openstack_nova_server_local_gb{id="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5",name="VM-2025121800000001",tenant_id="8665562a290e4da89f7612396a1ad580"} 100
+# HELP openstack_nova_server_status server_status
+# TYPE openstack_nova_server_status gauge
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="05966d0b-f81b-429c-a32f-661b8037cc75",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="430e925b-19f0-4662-ab75-17ebc7d9038a",name="T-2026033000000001",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="430e925b-19f0-4662-ab75-17ebc7d9038a"} 0
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="1f572907-376b-48fa-abb3-c1fd3cbec1f8",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="58b7700e-30f7-47b5-9f1c-c98210320622",name="VM-2026020300000003",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="58b7700e-30f7-47b5-9f1c-c98210320622"} 0
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="1f572907-376b-48fa-abb3-c1fd3cbec1f8",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="d218c958-b58b-46f5-a094-8f32950f098f",name="VM-2026031600000001",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="d218c958-b58b-46f5-a094-8f32950f098f"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="30673840-f53f-454d-b29a-20dca7002402",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="1120bf54-eaf1-40fa-9051-7af66bc2cd9f",name="VM-2025112700000003",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="1120bf54-eaf1-40fa-9051-7af66bc2cd9f"} 0
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="30673840-f53f-454d-b29a-20dca7002402",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5",name="VM-2025121800000001",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="eb3ae2e3-fff2-47a6-b6ac-4323d0a3cbd5"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="081c8d0f-fd18-48ee-a897-6756fb4165ae",name="T-2025112700000005",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="081c8d0f-fd18-48ee-a897-6756fb4165ae"} 0
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="2219cfe4-f490-4ef9-a921-99f9c3a9ac37",name="VM-2026031200000001",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="2219cfe4-f490-4ef9-a921-99f9c3a9ac37"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="3ab9bc7e-0144-4ee3-a23a-af552684948a",name="VM-2026032600000004",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="3ab9bc7e-0144-4ee3-a23a-af552684948a"} 0
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="61938e3b-a38b-4201-9c47-7ef5b0a366a5",name="VM-2026032700000001",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="61938e3b-a38b-4201-9c47-7ef5b0a366a5"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="84773e51-837e-4520-8756-354b7875ffdf",name="VM-2026021200000028",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="84773e51-837e-4520-8756-354b7875ffdf"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="afd3a5f1-f5db-4b55-9c6c-9c95e6d435e2",name="VM-2026010800000001",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="afd3a5f1-f5db-4b55-9c6c-9c95e6d435e2"} 0
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="b7662bfe-0708-462f-ae3d-54ed19c4f376",name="VM-2026030400000001",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="b7662bfe-0708-462f-ae3d-54ed19c4f376"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="b87ccecb-ba66-4113-bc99-3ad944a03c4f",name="VM-2026022500000003",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="b87ccecb-ba66-4113-bc99-3ad944a03c4f"} 0
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="d30dc2c2-1857-42f3-b63f-22b15e6b3fc4",name="VM-2026032700000002",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="d30dc2c2-1857-42f3-b63f-22b15e6b3fc4"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="db6e0067-bfe2-4778-b14a-81af66737674",name="VM-2025120800000005",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="db6e0067-bfe2-4778-b14a-81af66737674"} 0
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="3d1f3dba-eef0-4136-b95e-5d7751d5a80d",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="e9935c4d-1ad1-423d-b65d-11a1282def15",name="T-2025112700000001",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="e9935c4d-1ad1-423d-b65d-11a1282def15"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="7bed8292-68ff-41c4-99da-5ee8ec601f3b",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="c3c685e3-38aa-4a86-81a0-fdf5e946d93a",name="VM-2026030300000001",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="c3c685e3-38aa-4a86-81a0-fdf5e946d93a"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="a92c9a85-6c2f-4352-80fd-c6be2a4aeb3b",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="1decd453-bee9-4955-a145-99be7a52e171",name="VM-2025120100000003",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="1decd453-bee9-4955-a145-99be7a52e171"} 0
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="b5f3a0f9-b507-4eff-8c6d-b86ffdcd8622",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="8ccda04a-cbf7-4712-8f65-f38a1ca5e713",name="T-2026032500000006",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="8ccda04a-cbf7-4712-8f65-f38a1ca5e713"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="de70da60-35fe-4159-af1a-2caa6a52e060",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="d32afe06-2a77-41a7-92d7-d6dd606ed98c",name="VM-2026032900000001",status="SHUTOFF",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="d32afe06-2a77-41a7-92d7-d6dd606ed98c"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="fb7f8115-a230-4027-8730-f2e91f14a376",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="21515414-f275-40ac-ad68-d5452a4852f2",name="VM-2026040200000001",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="21515414-f275-40ac-ad68-d5452a4852f2"} 0
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="fb7f8115-a230-4027-8730-f2e91f14a376",host_id="0dfc7dc3107d9cf9021e92f92543b55ac3e2797a5a765a0651e7502a",hypervisor_hostname="vcs-node0",id="47cf9919-635d-43c8-9716-db7cdf234766",name="T-2026033000000003",status="ACTIVE",tenant_id="8665562a290e4da89f7612396a1ad580",user_id="827b2c4c27be49e2aa1fa90583779b9c",uuid="47cf9919-635d-43c8-9716-db7cdf234766"} 0
+# HELP openstack_nova_total_vms total_vms
+# TYPE openstack_nova_total_vms gauge
+openstack_nova_total_vms 22
+# HELP openstack_nova_up up
+# TYPE openstack_nova_up gauge
+openstack_nova_up 1
+# HELP openstack_nova_vcpus_available vcpus_available
+# TYPE openstack_nova_vcpus_available gauge
+openstack_nova_vcpus_available{aggregates="",availability_zone="",hostname="vcs-node0"} 64
+# HELP openstack_nova_vcpus_used vcpus_used
+# TYPE openstack_nova_vcpus_used gauge
+openstack_nova_vcpus_used{aggregates="",availability_zone="",hostname="vcs-node0"} 88
+# HELP openstack_placement_resource_allocation_ratio resource_allocation_ratio
+# TYPE openstack_placement_resource_allocation_ratio gauge
+openstack_placement_resource_allocation_ratio{hostname="vcs-node0",resourcetype="DISK_GB"} 1
+openstack_placement_resource_allocation_ratio{hostname="vcs-node0",resourcetype="MEMORY_MB"} 1.2000000476837158
+openstack_placement_resource_allocation_ratio{hostname="vcs-node0",resourcetype="VCPU"} 3
+# HELP openstack_placement_resource_reserved resource_reserved
+# TYPE openstack_placement_resource_reserved gauge
+openstack_placement_resource_reserved{hostname="vcs-node0",resourcetype="DISK_GB"} 0
+openstack_placement_resource_reserved{hostname="vcs-node0",resourcetype="MEMORY_MB"} 8192
+openstack_placement_resource_reserved{hostname="vcs-node0",resourcetype="VCPU"} 0
+# HELP openstack_placement_resource_total resource_total
+# TYPE openstack_placement_resource_total gauge
+openstack_placement_resource_total{hostname="vcs-node0",resourcetype="DISK_GB"} 3241
+openstack_placement_resource_total{hostname="vcs-node0",resourcetype="MEMORY_MB"} 385080
+openstack_placement_resource_total{hostname="vcs-node0",resourcetype="VCPU"} 64
+# HELP openstack_placement_resource_usage resource_usage
+# TYPE openstack_placement_resource_usage gauge
+openstack_placement_resource_usage{hostname="vcs-node0",resourcetype="DISK_GB"} 0
+openstack_placement_resource_usage{hostname="vcs-node0",resourcetype="MEMORY_MB"} 157696
+openstack_placement_resource_usage{hostname="vcs-node0",resourcetype="VCPU"} 88
+# HELP openstack_placement_up up
+# TYPE openstack_placement_up gauge
+openstack_placement_up 1

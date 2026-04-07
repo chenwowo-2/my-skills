@@ -1,0 +1,189 @@
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 6.026e-05
+go_gc_duration_seconds{quantile="0.25"} 9.0993e-05
+go_gc_duration_seconds{quantile="0.5"} 0.000108866
+go_gc_duration_seconds{quantile="0.75"} 0.000125728
+go_gc_duration_seconds{quantile="1"} 0.003266836
+go_gc_duration_seconds_sum 11.187939854
+go_gc_duration_seconds_count 84864
+# HELP go_gc_gogc_percent Heap size target percentage configured by the user, otherwise 100. This value is set by the GOGC environment variable, and the runtime/debug.SetGCPercent function. Sourced from /gc/gogc:percent.
+# TYPE go_gc_gogc_percent gauge
+go_gc_gogc_percent 100
+# HELP go_gc_gomemlimit_bytes Go runtime memory limit configured by the user, otherwise math.MaxInt64. This value is set by the GOMEMLIMIT environment variable, and the runtime/debug.SetMemoryLimit function. Sourced from /gc/gomemlimit:bytes.
+# TYPE go_gc_gomemlimit_bytes gauge
+go_gc_gomemlimit_bytes 9.223372036854776e+18
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 8
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.23.12"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated in heap and currently in use. Equals to /memory/classes/heap/objects:bytes.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 6.979256e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated in heap until now, even if released already. Equals to /gc/heap/allocs:bytes.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 2.2646186264e+11
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table. Equals to /memory/classes/profiling/buckets:bytes.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 3869
+# HELP go_memstats_frees_total Total number of heap objects frees. Equals to /gc/heap/frees:objects + /gc/heap/tiny/allocs:objects.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 8.89456209e+08
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata. Equals to /memory/classes/metadata/other:bytes.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 3.124048e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and currently in use, same as go_memstats_alloc_bytes. Equals to /memory/classes/heap/objects:bytes.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 6.979256e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used. Equals to /memory/classes/heap/released:bytes + /memory/classes/heap/free:bytes.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 8.798208e+06
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use. Equals to /memory/classes/heap/objects:bytes + /memory/classes/heap/unused:bytes
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 9.764864e+06
+# HELP go_memstats_heap_objects Number of currently allocated objects. Equals to /gc/heap/objects:objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 15799
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS. Equals to /memory/classes/heap/released:bytes.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 7.08608e+06
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system. Equals to /memory/classes/heap/objects:bytes + /memory/classes/heap/unused:bytes + /memory/classes/heap/released:bytes + /memory/classes/heap/free:bytes.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 1.8563072e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.7755513833761904e+09
+# HELP go_memstats_mallocs_total Total number of heap objects allocated, both live and gc-ed. Semantically a counter version for go_memstats_heap_objects gauge. Equals to /gc/heap/allocs:objects + /gc/heap/tiny/allocs:objects.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 8.89472008e+08
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures. Equals to /memory/classes/metadata/mcache/inuse:bytes.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 76800
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system. Equals to /memory/classes/metadata/mcache/inuse:bytes + /memory/classes/metadata/mcache/free:bytes.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 78000
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures. Equals to /memory/classes/metadata/mspan/inuse:bytes.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 486080
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system. Equals to /memory/classes/metadata/mspan/inuse:bytes + /memory/classes/metadata/mspan/free:bytes.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 554880
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place. Equals to /gc/heap/goal:bytes.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 9.242728e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations. Equals to /memory/classes/other:bytes.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 4.143475e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes obtained from system for stack allocator in non-CGO environments. Equals to /memory/classes/heap/stacks:bytes.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 2.326528e+06
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator. Equals to /memory/classes/heap/stacks:bytes + /memory/classes/os-stacks:bytes.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 2.326528e+06
+# HELP go_memstats_sys_bytes Number of bytes obtained from system. Equals to /memory/classes/total:byte.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 2.8793872e+07
+# HELP go_sched_gomaxprocs_threads The current runtime.GOMAXPROCS setting, or the number of operating system threads that can execute user-level Go code simultaneously. Sourced from /sched/gomaxprocs:threads.
+# TYPE go_sched_gomaxprocs_threads gauge
+go_sched_gomaxprocs_threads 64
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 32
+# HELP keepalived_address_list_errors_total Address list errors
+# TYPE keepalived_address_list_errors_total counter
+keepalived_address_list_errors_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_advertisements_interval_errors_total Advertisement interval errors
+# TYPE keepalived_advertisements_interval_errors_total counter
+keepalived_advertisements_interval_errors_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_advertisements_received_total Advertisements received
+# TYPE keepalived_advertisements_received_total counter
+keepalived_advertisements_received_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_advertisements_sent_total Advertisements sent
+# TYPE keepalived_advertisements_sent_total counter
+keepalived_advertisements_sent_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 618659
+# HELP keepalived_authentication_failure_total Authentication failure
+# TYPE keepalived_authentication_failure_total counter
+keepalived_authentication_failure_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 4.113532e+06
+# HELP keepalived_authentication_invalid_total Authentication invalid
+# TYPE keepalived_authentication_invalid_total counter
+keepalived_authentication_invalid_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_authentication_mismatch_total Authentication mismatch
+# TYPE keepalived_authentication_mismatch_total counter
+keepalived_authentication_mismatch_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_become_master_total Became master
+# TYPE keepalived_become_master_total counter
+keepalived_become_master_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 1
+# HELP keepalived_exporter_build_info A metric with a constant '1' value labeled by version, revision, branch, goversion from which keepalived_exporter was built, and the goos and goarch for the build.
+# TYPE keepalived_exporter_build_info gauge
+keepalived_exporter_build_info{branch="",goarch="amd64",goos="linux",goversion="go1.23.12",revision="unknown",tags="unknown",version=""} 1
+# HELP keepalived_gratuitous_arp_delay_total Gratuitous ARP delay
+# TYPE keepalived_gratuitous_arp_delay_total counter
+keepalived_gratuitous_arp_delay_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 5
+# HELP keepalived_invalid_type_received_total Invalid type errors
+# TYPE keepalived_invalid_type_received_total counter
+keepalived_invalid_type_received_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_ip_ttl_errors_total TTL errors
+# TYPE keepalived_ip_ttl_errors_total counter
+keepalived_ip_ttl_errors_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_packet_length_errors_total Packet length errors
+# TYPE keepalived_packet_length_errors_total counter
+keepalived_packet_length_errors_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_priority_zero_received_total Priority zero received
+# TYPE keepalived_priority_zero_received_total counter
+keepalived_priority_zero_received_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_priority_zero_sent_total Priority zero sent
+# TYPE keepalived_priority_zero_sent_total counter
+keepalived_priority_zero_sent_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_release_master_total Released master
+# TYPE keepalived_release_master_total counter
+keepalived_release_master_total{iname="kolla_internal_vip_51",intf="bond0.30",vrid="51"} 0
+# HELP keepalived_script_state Tracker Script State
+# TYPE keepalived_script_state gauge
+keepalived_script_state{name="check_alive"} 0
+keepalived_script_state{name="check_web"} 0
+# HELP keepalived_script_status Tracker Script Status
+# TYPE keepalived_script_status gauge
+keepalived_script_status{name="check_alive"} 1
+keepalived_script_status{name="check_web"} 1
+# HELP keepalived_up Status
+# TYPE keepalived_up gauge
+keepalived_up 1
+# HELP keepalived_vrrp_state State of vrrp
+# TYPE keepalived_vrrp_state gauge
+keepalived_vrrp_state{iname="kolla_internal_vip_51",intf="bond0.30",ip_address="10.20.193.58",vrid="51"} 2
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 1872.22
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1.048576e+06
+# HELP process_network_receive_bytes_total Number of bytes received by the process over the network.
+# TYPE process_network_receive_bytes_total counter
+process_network_receive_bytes_total 1.8645248059702e+13
+# HELP process_network_transmit_bytes_total Number of bytes sent by the process over the network.
+# TYPE process_network_transmit_bytes_total counter
+process_network_transmit_bytes_total 3.0006852554609e+13
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 9
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 2.5276416e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.76864171836e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 1.269059584e+09
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes 1.8446744073709552e+19
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 230327
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0
